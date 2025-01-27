@@ -2,9 +2,6 @@
 
 A C# console application for managing a store's product catalog, processing purchases, and generating receipts.
 
-___
-
-
 ## Features
 
 - **Product Catalog Management**: Add products with details (name, price, quantity, expiry date).
