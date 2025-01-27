@@ -14,13 +14,18 @@ namespace Parameters
             catalog.AddItem(new Product("Apple", 1.5m, 10, DateTime.Now.AddDays(7)));
             catalog.AddItem(new Product("Banana", 0.5m, 20, DateTime.Now.AddDays(3)));
             catalog.AddItem(new Product("Orange", 2.5m, 5, DateTime.Now.AddDays(5)));
+            catalog.AddItem(new Product("Grapes", 3.5m, 15, DateTime.Now.AddDays(2)));
+
             Console.WriteLine($"Products in the catalog:\n{string.Join(", ", catalog.GetItems().Select(p => p.Name))}");
             Console.WriteLine($"Products prices:\n{string.Join(", ", catalog.GetItems().Select(p => p.Price))}");
             Console.WriteLine($"Products quantity:\n{string.Join(", ", catalog.GetItems().Select(p => p.Quantity))}");
+
             Console.WriteLine($"\nEnter the product name to purchase: ");
             string productName = Console.ReadLine();
+
             Console.WriteLine("\nEnter the quantity:");
             int quantity = int.Parse(Console.ReadLine());
+
             Product product = catalog.GetItems().FirstOrDefault(p => p.Name == productName);
             if (product != null)
             {
