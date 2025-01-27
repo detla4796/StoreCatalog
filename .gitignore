@@ -1,0 +1,93 @@
+# Ignore build and binary files
+[Bb]in/
+[Oo]bj/
+[Tt]est[Rr]esults/
+[Dd]ebug/
+[Rr]elease/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.suo
+*.user
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+
+# Ignore NuGet package files
+[Nn]u[Pp]ackages/
+*.nupkg
+packages/
+
+# Ignore backup and temporary files
+*.bak
+*.tmp
+*.log
+*.swp
+*.swo
+
+# Ignore user-specific files
+*.userprefs
+
+# Ignore Visual Studio project files
+*.csproj.user
+*.csproj.*.user
+*.csproj
+*.sln
+*.vs/
+.vs/
+.vscode/
+
+# Ignore Rider files (if used)
+.idea/
+*.iml
+
+# Ignore macOS files
+.DS_Store
+
+# Ignore editor backup files
+*~
+*.swp
+*.swo
+
+# Ignore .NET Core files
+.dotnet/
+.history/
+.local/
+tools/
+
+# Ignore code coverage files
+.coverage
+.coverage.*
+*.coverage.xml
+
+# Ignore Docker files (if used)
+docker-compose.yml
+docker-compose.*.yml
+.dockerignore
+
+# Ignore environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Ignore dependency files
+node_modules/
+jspm_packages/
+
+# Ignore C#-specific files
+*.csproj
+*.sln
+*.csproj.user
+*.suo
+*.user
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
